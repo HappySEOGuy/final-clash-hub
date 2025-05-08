@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,19 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .ucl-gradient {
+    @apply bg-gradient-to-r from-ucl-blue via-ucl-black to-ucl-blue;
+  }
+  
+  .gold-accent {
+    @apply border-ucl-gold text-ucl-gold;
+  }
+  
+  .team-logo {
+    @apply h-16 w-16 md:h-24 md:w-24 object-contain;
   }
 }
