@@ -1,6 +1,5 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart } from "@/components/ui/chart";
 import { ChartBar } from "lucide-react";
 
 const Statistics = () => {
@@ -55,14 +54,41 @@ const Statistics = () => {
               <CardTitle>UCL Campaign Comparison</CardTitle>
             </CardHeader>
             <CardContent className="h-80">
-              <BarChart
-                data={chartData}
-                index="name"
-                categories={["Inter", "PSG"]}
-                colors={["#0073C2", "#E63946"]}
-                valueFormatter={(value) => `${value}`}
-                yAxisWidth={48}
-              />
+              {/* Replace BarChart with custom chart visualization */}
+              <div className="h-full flex flex-col justify-center">
+                {chartData.map((item, index) => (
+                  <div key={index} className="mb-4">
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>{item.name}</span>
+                      <div className="flex space-x-4">
+                        <span className="text-[#0073C2] font-medium">{item.Inter}</span>
+                        <span className="text-[#E63946] font-medium">{item.PSG}</span>
+                      </div>
+                    </div>
+                    <div className="flex h-6 w-full bg-gray-100 rounded-lg overflow-hidden">
+                      <div 
+                        className="bg-[#0073C2] h-full" 
+                        style={{ width: `${(item.Inter / Math.max(item.Inter, item.PSG)) * 50}%` }}
+                      ></div>
+                      <div className="flex-grow"></div>
+                      <div 
+                        className="bg-[#E63946] h-full" 
+                        style={{ width: `${(item.PSG / Math.max(item.Inter, item.PSG)) * 50}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+                <div className="flex justify-between mt-4">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-[#0073C2] rounded-sm mr-2"></div>
+                    <span className="text-sm">Inter Milan</span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-[#E63946] rounded-sm mr-2"></div>
+                    <span className="text-sm">PSG</span>
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
