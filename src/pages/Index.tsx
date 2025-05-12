@@ -25,16 +25,16 @@ const Index = () => {
           </div>
         </div>
         
-        {/* 2. Promotions section - widget and content */}
+        {/* 1. Promotions section - widget and content */}
         <Promotions />
         
-        {/* 3. Kursy section - widget and content */}
+        {/* 2. Kursy section - widget and content */}
         <BettingOdds />
         
-        {/* 4. Team comparison widget */}
+        {/* 3. Team comparison widget */}
         <TeamComparison />
         
-        {/* 5. Typy section */}
+        {/* 4. Typy section */}
         <div className="container mx-auto px-4 py-8 bg-white">
           <div className="prose max-w-none">
             <h2 className="text-2xl font-bold mt-8 mb-4">Typy Bukmacherskie na PSG – Inter</h2>
@@ -61,10 +61,10 @@ const Index = () => {
           </div>
         </div>
         
-        {/* 6. Statistics - content and widget */}
+        {/* 5. Statistics - content and widget */}
         <Statistics />
         
-        {/* 7. Rest of the content in order */}
+        {/* 6. Rest of the content in order */}
         <div className="container mx-auto px-4 py-8 bg-white">
           <div className="prose max-w-none">
             <h2 className="text-2xl font-bold mt-8 mb-4">Kiedy finał Ligi Mistrzów 2025?</h2>
