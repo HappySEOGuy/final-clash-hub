@@ -3,7 +3,7 @@ import React from 'react';
 import KodyNavigation from "@/components/KodyNavigation";
 import KodyHeader from "@/components/KodyHeader";
 import BookmakerOffers from "@/components/BookmakerOffers";
-import BookmakerBonus from "@/components/BookmakerBonus";
+import BookmakerFeatured from "@/components/BookmakerFeatured";
 import BettingTipsCalendar from "@/components/BettingTipsCalendar";
 import ContentBlock from "@/components/ContentBlock";
 import TopBookmakers from "@/components/TopBookmakers";
@@ -21,8 +21,8 @@ const Index = () => {
         {/* Scrollable Bookmaker Offers Widget */}
         <BookmakerOffers />
         
-        {/* Bookmaker Bonus Tiles Section */}
-        <BookmakerBonus />
+        {/* Bookmaker Featured Section (replacing BookmakerBonus) */}
+        <BookmakerFeatured />
         
         {/* Betting Tips Calendar */}
         <BettingTipsCalendar />
