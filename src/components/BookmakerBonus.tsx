@@ -26,7 +26,7 @@ const BookmakerBonus = () => {
     },
     {
       logo: 'betfan',
-      color: '#20c063',
+      color: '#001c58',
       text: 'Bonus 200% do 600 zł od 1. depozytu = POTROJENIE wpłaty!',
     },
     {

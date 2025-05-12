@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Carousel,
@@ -60,7 +59,7 @@ const BookmakerOffers = () => {
     <div className="py-14 bg-slate-50" id="kody">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-10 text-center text-[#333333]">
-          <span className="bg-gradient-to-r from-[#20c063] to-[#0e4e23] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#001c58] to-[#0a2b6b] bg-clip-text text-transparent">
             Kody bukmacherskie
           </span>
         </h2>
@@ -104,7 +103,7 @@ const BookmakerOffers = () => {
                             </div>
                           </div>
                           <Button 
-                            className="w-full mt-5 flex items-center justify-between bg-[#20c063] hover:bg-[#18a14f] text-white"
+                            className="w-full mt-5 flex items-center justify-between bg-[#001c58] hover:bg-[#0a2b6b] text-white"
                           >
                             <span>Sprawdzam kod</span>
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
@@ -125,7 +124,7 @@ const BookmakerOffers = () => {
         </div>
         
         <div className="text-center mt-6">
-          <Button variant="outline" className="bg-transparent text-[#20c063] border-[#20c063] hover:bg-[#20c063] hover:text-white">
+          <Button variant="outline" className="bg-transparent text-[#001c58] border-[#001c58] hover:bg-[#001c58] hover:text-white">
             Dowiedz się więcej
           </Button>
         </div>

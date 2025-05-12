@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const KodyFooter = () => {
   return (
-    <footer className="bg-[#0e4e23] text-white py-10">
+    <footer className="bg-[#001c58] text-white py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>

@@ -8,8 +8,8 @@ const KodyHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#0e4e23] mb-4">
-              <span className="text-[#20c063]">KODY</span> <br className="md:hidden" />
+            <h1 className="text-4xl md:text-6xl font-bold text-[#001c58] mb-4">
+              <span className="text-[#001c58]">KODY</span> <br className="md:hidden" />
               BUKMACHERSKIE
             </h1>
             <p className="text-lg md:text-xl max-w-xl">
@@ -20,19 +20,19 @@ const KodyHeader = () => {
             </p>
             
             <div className="flex space-x-4 mt-6">
-              <a href="#ranking" className="flex items-center text-[#20c063] hover:underline font-semibold">
+              <a href="#ranking" className="flex items-center text-[#001c58] hover:underline font-semibold">
                 <span>Ranking bukmacherów</span>
                 <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="#kody" className="flex items-center text-[#20c063] hover:underline font-semibold">
+              <a href="#kody" className="flex items-center text-[#001c58] hover:underline font-semibold">
                 <span>Kody bukmacherskie</span>
                 <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="#opinie" className="flex items-center text-[#20c063] hover:underline font-semibold">
+              <a href="#opinie" className="flex items-center text-[#001c58] hover:underline font-semibold">
                 <span>Opinie o bukmacherach</span>
                 <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

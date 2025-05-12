@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -77,7 +76,7 @@ const TopBookmakers = () => {
                 <div className="md:flex-grow p-4 bg-white flex flex-col md:flex-row">
                   <div className="md:w-1/4 border-b md:border-b-0 md:border-r border-slate-200 p-4 flex flex-col justify-center items-center md:items-start">
                     <div className="text-sm text-slate-600 font-medium">BONUS</div>
-                    <div className="text-4xl font-bold text-[#20c063]">{bookmaker.bonus}</div>
+                    <div className="text-4xl font-bold text-[#001c58]">{bookmaker.bonus}</div>
                   </div>
                   
                   <div className="flex-grow p-4 md:pl-8">
@@ -94,7 +93,7 @@ const TopBookmakers = () => {
                   </div>
                   
                   <div className="md:w-1/4 p-4 flex flex-col space-y-4 items-center justify-center">
-                    <Button className="w-full bg-[#20c063] hover:bg-[#18a14f] text-white font-bold">
+                    <Button className="w-full bg-[#001c58] hover:bg-[#0a2b6b] text-white font-bold">
                       ODBIERZ BONUS
                     </Button>
                     <div className="w-full px-4 py-2 border-2 border-dashed border-slate-300 text-center rounded-md text-slate-600 font-medium">
