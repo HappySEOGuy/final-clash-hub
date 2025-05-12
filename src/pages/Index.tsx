@@ -21,7 +21,7 @@ const Index = () => {
         {/* Scrollable Bookmaker Offers Widget */}
         <BookmakerOffers />
         
-        {/* Bookmaker Featured Section (replacing BookmakerBonus) */}
+        {/* Bookmaker Featured Section with Best Bonuses */}
         <BookmakerFeatured />
         
         {/* Betting Tips Calendar */}
