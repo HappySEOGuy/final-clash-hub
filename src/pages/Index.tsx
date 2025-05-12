@@ -7,6 +7,7 @@ import BookmakerBonus from "@/components/BookmakerBonus";
 import BettingTipsCalendar from "@/components/BettingTipsCalendar";
 import ContentBlock from "@/components/ContentBlock";
 import TopBookmakers from "@/components/TopBookmakers";
+import BlogSection from "@/components/BlogSection";
 import KodyFooter from "@/components/KodyFooter";
 
 const Index = () => {
@@ -31,6 +32,9 @@ const Index = () => {
         
         {/* Top Bookmakers Widget */}
         <TopBookmakers />
+
+        {/* Blog Section */}
+        <BlogSection />
       </main>
       <KodyFooter />
     </div>
