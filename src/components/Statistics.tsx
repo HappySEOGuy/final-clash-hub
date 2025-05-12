@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartBar } from "lucide-react";
 
@@ -42,19 +41,50 @@ const Statistics = () => {
         <div className="flex items-center justify-center mb-10">
           <ChartBar className="text-ucl-gold mr-2 h-6 w-6" />
           <h2 className="text-3xl font-bold text-center text-ucl-blue">
-            Team Statistics
+            Statystyki Drużyn
           </h2>
           <ChartBar className="text-ucl-gold ml-2 h-6 w-6" />
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+          <h3 className="text-xl font-semibold mb-4">Statystyki przed finalem Ligi Mistrzów: PSG vs Inter</h3>
+          <p className="mb-4">
+            Przed majowym Finałem Ligi Mistrzów UEFA 2025 warto przyjrzeć się statystykom obu drużyn:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-3">
+            <li>
+              <span className="font-medium">PSG:</span> Paryżanie dotarli do finału po raz drugi (poprzednio w 2020 roku, porażka 0:1 z Bayernem). W dotychczasowych 16 meczach rozgrywek tego sezonu zdobyli 33 bramki, co daje średnią strzelonych goli na poziomie ponad 2.
+            </li>
+            <li>
+              <span className="font-medium">Inter:</span> Mediolańczycy mają na koncie trzy Puchary Europy (PSG żadnego). W bieżącej edycji LM ekipa z San Siro imponuje przede wszystkim skutecznością w obronie, o czym najlepiej świadczy fakt, iż aż ośmiokrotnie (najwięcej ze wszystkich drużyn) była w stanie zachować czyste konto.
+            </li>
+            <li>
+              <span className="font-medium">Bezpośrednie starcia:</span> Do tej pory drużyny PSG i Interu rywalizowały ze sobą pięciokrotnie, biorąc pod uwagę zarówno mecze o stawkę, jak i towarzyskie. Co ciekawe, obie odniosły po dwa zwycięstwa, a jedno spotkanie pozostało nierozstrzygnięte.
+            </li>
+          </ul>
+          <p className="mb-4">
+            Jak zatem widać, PSG góruje w ofensywie, ale Inter lepiej radzi sobie w obronie. W prawidłowym wytypowaniu zwycięzcy finału nie pomaga dodatkowo taka sama liczba zwycięstw paryżan i mediolańczyków w ich bezpośrednich starciach.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+          <h3 className="text-xl font-semibold mb-4">Historia zwycięzców Ligi Mistrzów</h3>
+          <p className="mb-4">
+            Liga Mistrzów, określana wcześniej innymi terminami, ma bogatą historię, sięgającą 1955 roku. Od tego czasu wiele drużyn walczyło o tytuł mistrza Europy. Real Madryt jest rekordzistą pod względem liczby zwycięstw, z 15 tytułami. AC Milan i Bayern Monachium również mają na swoim koncie wiele zwycięstw, odpowiednio 7 i 6.
+          </p>
+          <p className="mb-4">
+            Inne drużyny, takie jak FC Barcelona, Liverpool i Manchester United, również odniosły sukces w Lidze Mistrzów. Podobnie zresztą jak: FC Porto, Juventus, Olympique Marsylia, Hamburger SV czy Borussia Dortmund. W historii Ligi Mistrzów można znaleźć wiele emocjonujących meczów, w tym te, które rozstrzygały się w rzutach karnych. Finał Ligi Mistrzów jest zawsze wielkim wydarzeniem, które przyciąga uwagę kibiców z całego świata.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Main Statistics Chart */}
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle>UCL Campaign Comparison</CardTitle>
+              <CardTitle>Porównanie w Lidze Mistrzów</CardTitle>
             </CardHeader>
             <CardContent className="h-80">
-              {/* Replace BarChart with custom chart visualization */}
+              {/* Custom chart visualization */}
               <div className="h-full flex flex-col justify-center">
                 {chartData.map((item, index) => (
                   <div key={index} className="mb-4">

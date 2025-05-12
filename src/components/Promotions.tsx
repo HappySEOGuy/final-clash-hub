@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Award } from "lucide-react";
@@ -10,9 +9,62 @@ const Promotions = () => {
         <div className="flex items-center justify-center mb-10">
           <Award className="text-ucl-gold mr-2 h-6 w-6" />
           <h2 className="text-3xl font-bold text-center text-ucl-blue">
-            Bookmaker Promotions
+            Promocje Bukmacherskie
           </h2>
           <Award className="text-ucl-gold ml-2 h-6 w-6" />
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md mb-10">
+          <h3 className="text-xl font-semibold mb-4">Promocje bukmacherskie na finał Ligi Mistrzów 2025</h3>
+          <p className="mb-4">
+            Promocje na finał Ligi Mistrzów to doskonała okazja, by zwiększyć emocje podczas obstawiania meczu PSG – Inter. Mecze półfinałowe, zwłaszcza rewanże, dostarczają niezapomnianych emocji, gdyż to właśnie one decydują o awansie do finału. Bukmacherzy prześcigają się w ofertach, które przyciągają zarówno nowych, jak i doświadczonych graczy.
+          </p>
+          
+          <h4 className="text-lg font-semibold mt-6 mb-3">Najciekawsze promocje bukmacherskie na PSG – Inter:</h4>
+          <ul className="list-disc pl-6 mb-6 space-y-3">
+            <li>
+              <span className="font-medium">STS:</span> Największy polski bukmacher oferuje swoim nowym graczom zakład bez ryzyka o wartości 100 zł, który można wykorzystać do obstawienia francusko-włoskiego starcia.
+            </li>
+            <li>
+              <span className="font-medium">Fortuna:</span> ten bukmacher także posiada w swojej ofercie zakład bez ryzyka o wartości 100 zł. Co jednak najważniejsze, zwróconymi środkami w razie ewentualnego niepowodzenia nie trzeba w jakikolwiek sposób obracać!
+            </li>
+            <li>
+              <span className="font-medium">Superbet:</span> jeszcze większą kwotę cashbacku swoim nowym graczom ma do zaproponowania Superbet. Dołączając do szerokiego grona jego klientów, można otrzymać aż do 3500 zł cashbacku po pierwszym tygodniu korzystania z jego usług!
+            </li>
+          </ul>
+          <p className="text-sm text-gray-600">
+            Wymienione wyżej promocje na Finał Ligi Mistrzów są dostępne już teraz, a zostały przez nas wspomniane ze względu na ich ogólną atrakcyjność z perspektywy graczy. Jesteśmy jednak pewni, że wraz z upływem kolejnych dni dzielących nas od starcia PSG – Inter, poszczególni legalni bukmacherzy będą mieli do zaoferowania jeszcze więcej w postaci promocji dotyczących wyłącznie tegorocznego finału Champions League.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md mb-10">
+          <h3 className="text-xl font-semibold mb-4">Gdzie obstawić finał Ligi Mistrzów z bonusem?</h3>
+          <p className="mb-4">
+            Aby w pełni wykorzystać Promocje na Finał Ligi Mistrzów, warto wybrać renomowanych bukmacherów, 
+            takich jak STS, Fortuna, Superbet. Proces jest prosty:
+          </p>
+          <ol className="list-decimal pl-6 mb-6 space-y-2">
+            <li>Zarejestruj się na stronie bukmachera, podając kod promocyjny: KODVIPA.</li>
+            <li>Wpłać wymagany depozyt, np. 50 zł.</li>
+            <li>Postaw zakład na finał Ligi Mistrzów 2025, typując wynik lub inne wydarzenie – zależnie od promocji.</li>
+            <li>Odbierz bonus po spełnieniu warunków promocji.</li>
+          </ol>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md mb-10">
+          <h3 className="text-xl font-semibold mb-4">Bilety na finał Ligi Mistrzów</h3>
+          <p className="mb-4">
+            Bilety na finał Ligi Mistrzów to marzenie każdego kibica. Nadchodzący sezon Ligi Mistrzów UEFA 2024/2025 
+            rozpocznie się w 2024 roku i zakończy finałem, zaplanowanym na 31 maja 2025 roku.
+          </p>
+          <p className="mb-4">
+            Ceny biletów na Finał Ligi Mistrzów w Monachium zaczynają się od 70 euro dla kibiców klubowych, 
+            ale miejsca w lepszych sektorach kosztują nawet 960 euro.
+          </p>
+          <p className="text-sm text-gray-600 italic">
+            Ważne: Jeżeli ktoś nie zarejestrował się do 11 kwietnia do godz. 11 czasu środkowoeuropejskiego, 
+            nie może w tej chwili ubiegać się o bilet.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
