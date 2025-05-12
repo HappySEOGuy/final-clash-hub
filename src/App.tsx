@@ -25,6 +25,11 @@ const App = () => (
           <Route path="/teams" element={<Teams />} />
           <Route path="/odds" element={<Odds />} />
           <Route path="/promotions" element={<Promotions />} />
+          <Route path="/promocje" element={<Promotions />} />
+          <Route path="/kody" element={<Index />} />
+          <Route path="/bukmacherzy" element={<Index />} />
+          <Route path="/opinie" element={<Index />} />
+          <Route path="/blog" element={<Index />} />
           <Route path="/stats" element={<StatsPage />} />
           <Route path="/tables" element={<TablesPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
