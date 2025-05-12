@@ -130,10 +130,10 @@ const BookmakerOffers = () => {
                         
                         {/* Button and bonus text */}
                         <Button 
-                          className="w-full mt-4 flex items-center justify-between bg-green-600 hover:bg-green-700 text-white rounded-full py-5"
+                          className="w-full mt-4 flex items-center justify-between bg-[#001c58] hover:bg-[#0a2b6b] text-white rounded-full py-5"
                         >
                           <span>Sprawdzam kod</span>
-                          <svg className="w-5 h-5 bg-white text-green-600 p-1 rounded-full" viewBox="0 0 24 24" fill="none">
+                          <svg className="w-5 h-5 bg-white text-[#001c58] p-1 rounded-full" viewBox="0 0 24 24" fill="none">
                             <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                           </svg>
                         </Button>
