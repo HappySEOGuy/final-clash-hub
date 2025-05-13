@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Teams from "./pages/Teams";
 import Odds from "./pages/Odds";
 import Promotions from "./pages/Promotions";
+import KodyPromocyjne from "./pages/KodyPromocyjne";
 import StatsPage from "./pages/Stats";
 import TablesPage from "./pages/TablesPage";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/odds" element={<Odds />} />
           <Route path="/promotions" element={<Promotions />} />
           <Route path="/promocje" element={<Promotions />} />
+          <Route path="/kody-promocyjne" element={<KodyPromocyjne />} />
           <Route path="/kody" element={<Index />} />
           <Route path="/bukmacherzy" element={<Index />} />
           <Route path="/opinie" element={<Index />} />

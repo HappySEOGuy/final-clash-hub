@@ -24,6 +24,9 @@ const KodyNavigation = () => {
             <Link to="/kody" className="font-medium text-white hover:text-white/80">
               Kody bukmacherskie
             </Link>
+            <Link to="/kody-promocyjne" className="font-medium text-white hover:text-white/80">
+              Kody Promocyjne
+            </Link>
             <Link to="/bukmacherzy" className="font-medium text-white hover:text-white/80">
               Bukmacherzy
             </Link>
