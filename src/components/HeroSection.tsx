@@ -1,99 +1,59 @@
 
-import { useState, useEffect } from 'react';
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  // Set the final date (example date - you can change it)
-  const finalDate = new Date('2025-05-31T20:00:00');
-
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const difference = +finalDate - +new Date();
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
-      }
-    };
-
-    calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <div className="relative min-h-[500px] flex items-center bg-gradient-to-b from-ucl-blue via-ucl-blue/90 to-ucl-blue/80">
-      <div className="absolute inset-0 bg-hero-pattern bg-cover bg-center opacity-20 mix-blend-overlay"></div>
-      <div className="container mx-auto px-4 py-20 pt-32 flex flex-col items-center text-center z-10">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-          UEFA Champions League Final
-        </h1>
-        <div className="flex items-center justify-center my-6 space-x-6 md:space-x-10">
-          <div className="flex flex-col items-center">
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/512px-FC_Internazionale_Milano_2021.svg.png" 
-              alt="Inter Milan" 
-              className="team-logo" 
-            />
-            <h2 className="text-white text-xl md:text-2xl font-bold mt-2">Inter</h2>
+    <div className="bg-[#0B1D51] py-12 md:py-20">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Left Column - Text Content */}
+          <div className="md:w-1/2 mb-8 md:mb-0">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+              KODY BUKMACHERSKIE
+            </h1>
+            <p className="text-lg md:text-xl max-w-xl text-white/90 mb-8">
+              Aktualne <span className="font-bold">kody promocyjne, bonusy powitalne</span> i najciekawsze 
+              oferty od legalnych bukmacherów w Polsce. Codziennie 
+              przeglądamy rynek, by dostarczać Ci najbardziej opłacalne okazje.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              <Link to="#ranking" className="flex items-center text-white hover:underline font-semibold transition-colors group">
+                <span>Ranking bukmacherów</span>
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
+              <Link to="#kody" className="flex items-center text-white hover:underline font-semibold transition-colors group">
+                <span>Kody bukmacherskie</span>
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
+              <Link to="#opinie" className="flex items-center text-white hover:underline font-semibold transition-colors group">
+                <span>Opinie o bukmacherach</span>
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
+            </div>
           </div>
           
-          <div className="flex flex-col items-center">
-            <div className="text-ucl-gold text-3xl md:text-5xl font-bold">VS</div>
-            <div className="mt-2 text-white text-sm">Wembley Stadium</div>
-          </div>
-          
-          <div className="flex flex-col items-center">
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/512px-Paris_Saint-Germain_F.C..svg.png" 
-              alt="Paris Saint-Germain" 
-              className="team-logo" 
-            />
-            <h2 className="text-white text-xl md:text-2xl font-bold mt-2">PSG</h2>
-          </div>
-        </div>
-        
-        <div className="bg-black/30 px-6 py-4 rounded-xl backdrop-blur-sm my-6">
-          <p className="text-white text-lg mb-2">Countdown to Kickoff</p>
-          <div className="flex space-x-4 text-center">
-            <div>
-              <div className="text-ucl-gold text-2xl md:text-4xl font-bold">{timeLeft.days}</div>
-              <div className="text-white text-xs md:text-sm">Days</div>
-            </div>
-            <div>
-              <div className="text-ucl-gold text-2xl md:text-4xl font-bold">{timeLeft.hours}</div>
-              <div className="text-white text-xs md:text-sm">Hours</div>
-            </div>
-            <div>
-              <div className="text-ucl-gold text-2xl md:text-4xl font-bold">{timeLeft.minutes}</div>
-              <div className="text-white text-xs md:text-sm">Minutes</div>
-            </div>
-            <div>
-              <div className="text-ucl-gold text-2xl md:text-4xl font-bold animate-pulse-slow">{timeLeft.seconds}</div>
-              <div className="text-white text-xs md:text-sm">Seconds</div>
+          {/* Right Column - Image */}
+          <div className="md:w-1/2 flex justify-center md:justify-end">
+            <div className="relative">
+              {/* Light radial gradient spotlight effect */}
+              <div className="absolute inset-0 bg-gradient-radial from-blue-400/20 to-transparent rounded-full blur-xl"></div>
+              
+              {/* Lewandowski Image */}
+              <img 
+                src="/lovable-uploads/f6be044f-8802-4397-887a-21ce8dfdb3eb.png" 
+                alt="Robert Lewandowski" 
+                className="relative z-10 h-[400px] max-w-full object-contain drop-shadow-2xl"
+              />
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <Button asChild className="bg-ucl-gold hover:bg-ucl-gold/90 text-ucl-blue">
-            <Link to="/teams">Team Profiles</Link>
-          </Button>
-          <Button asChild variant="outline" className="border-ucl-gold text-ucl-gold hover:bg-ucl-gold/10">
-            <Link to="/odds">View Betting Odds</Link>
-          </Button>
         </div>
       </div>
     </div>

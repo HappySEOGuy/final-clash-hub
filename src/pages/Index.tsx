@@ -1,7 +1,7 @@
 
 import React from 'react';
 import KodyNavigation from "@/components/KodyNavigation";
-import KodyHeader from "@/components/KodyHeader";
+import HeroSection from "@/components/HeroSection";
 import BookmakerOffers from "@/components/BookmakerOffers";
 import BookmakerFeatured from "@/components/BookmakerFeatured";
 import BettingTipsCalendar from "@/components/BettingTipsCalendar";
@@ -15,8 +15,8 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <KodyNavigation />
       <main className="flex-grow">
-        {/* Header Section with Title and 3D Logo */}
-        <KodyHeader />
+        {/* Updated Hero Section */}
+        <HeroSection />
         
         {/* Scrollable Bookmaker Offers Widget */}
         <BookmakerOffers />

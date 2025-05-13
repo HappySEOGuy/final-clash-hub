@@ -83,6 +83,7 @@ export default {
 				'uefa-accent-gradient': 'linear-gradient(90deg, #1B3FA0 0%, #5F1BBF 50%, #4C6FFF 100%)',
 				'subtle-blue': 'linear-gradient(135deg, #F8F9FA 0%, #E5EEFF 100%)',
 				'subtle-purple': 'linear-gradient(135deg, #F8F9FA 0%, #E5DEFF 100%)',
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
 			boxShadow: {
 				'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
