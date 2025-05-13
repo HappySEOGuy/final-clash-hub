@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#0B1D51] py-12 md:py-20">
+    <div className="bg-uefa-gradient py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* Left Column - Text Content */}
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+        <div className="flex flex-col items-center">
+          {/* Text Content - Now centered and full width */}
+          <div className="w-full max-w-3xl text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight font-rubik">
               KODY BUKMACHERSKIE
             </h1>
-            <p className="text-lg md:text-xl max-w-xl text-white/90 mb-8">
+            <p className="text-lg md:text-xl max-w-2xl mx-auto text-white/90 mb-8 font-inter">
               Aktualne <span className="font-bold">kody promocyjne, bonusy powitalne</span> i najciekawsze 
               oferty od legalnych bukmacherów w Polsce. Codziennie 
               przeglądamy rynek, by dostarczać Ci najbardziej opłacalne okazje.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
               <Link to="#ranking" className="flex items-center text-white hover:underline font-semibold transition-colors group">
                 <span>Ranking bukmacherów</span>
                 <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
@@ -38,20 +38,15 @@ const HeroSection = () => {
                 </svg>
               </Link>
             </div>
-          </div>
-          
-          {/* Right Column - Image */}
-          <div className="md:w-1/2 flex justify-center md:justify-end">
-            <div className="relative">
-              {/* Light radial gradient spotlight effect */}
-              <div className="absolute inset-0 bg-gradient-radial from-blue-400/20 to-transparent rounded-full blur-xl"></div>
-              
-              {/* Lewandowski Image */}
-              <img 
-                src="/lovable-uploads/f6be044f-8802-4397-887a-21ce8dfdb3eb.png" 
-                alt="Robert Lewandowski" 
-                className="relative z-10 h-[400px] max-w-full object-contain drop-shadow-2xl"
-              />
+            
+            {/* Call to Action Button */}
+            <div className="mt-8">
+              <Link 
+                to="/kody-promocyjne" 
+                className="bg-superbet-red hover:bg-superbet-red/90 text-white font-bold py-3 px-8 text-lg rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              >
+                SPRAWDŹ NAJLEPSZE BONUSY
+              </Link>
             </div>
           </div>
         </div>

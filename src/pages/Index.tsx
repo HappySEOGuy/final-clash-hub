@@ -15,7 +15,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <KodyNavigation />
       <main className="flex-grow">
-        {/* Updated Hero Section */}
+        {/* Updated Hero Section with UEFA gradient styling */}
         <HeroSection />
         
         {/* Scrollable Bookmaker Offers Widget */}
