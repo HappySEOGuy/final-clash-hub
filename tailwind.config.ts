@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,9 +65,9 @@ export default {
 				},
 				// Updated color scheme for Superbet/UEFA
 				superbet: {
-					navy: '#0A1034',     // Dark navy blue
+					navy: '#0B1D51',     // Dark navy blue (updated)
 					blue: '#1B3FA0',     // Royal blue
-					gold: '#C8A951',     // Gold accent
+					gold: '#C8A951',     // Gold accent 
 					red: '#E30613',      // Superbet red
 					purple: '#6A4ACF',   // Soft purple
 					'electric-blue': '#4C6FFF', // Electric blue
@@ -79,7 +80,7 @@ export default {
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/ucl-bg.jpg')",
 				'teal-gradient': 'linear-gradient(102.3deg, rgba(8,110,125,1) 5.9%, rgba(27,181,190,1) 64%, rgba(240,247,248,1) 89%)',
-				'uefa-gradient': 'linear-gradient(90deg, #0A1034 0%, #1B3FA0 50%, #5F1BBF 100%)',
+				'uefa-gradient': 'linear-gradient(90deg, #0B1D51 0%, #1B3FA0 50%, #5F1BBF 100%)',
 				'uefa-accent-gradient': 'linear-gradient(90deg, #1B3FA0 0%, #5F1BBF 50%, #4C6FFF 100%)',
 				'subtle-blue': 'linear-gradient(135deg, #F8F9FA 0%, #E5EEFF 100%)',
 				'subtle-purple': 'linear-gradient(135deg, #F8F9FA 0%, #E5DEFF 100%)',
