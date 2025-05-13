@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const KodyNavigation = () => {
   return (
-    <div className="bg-[#001c58] shadow-md">
+    <div className="bg-purple-dark shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
@@ -35,7 +35,7 @@ const KodyNavigation = () => {
             </Link>
           </div>
           
-          <Button className="bg-white hover:bg-white/90 text-[#001c58] font-bold">
+          <Button className="bg-purple-bright hover:bg-purple-bright/90 text-white font-bold">
             Najlepsze oferty
           </Button>
         </div>

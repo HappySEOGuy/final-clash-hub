@@ -19,7 +19,7 @@ const KodyPromocyjne = () => {
     <div className="min-h-screen flex flex-col">
       <KodyNavigation />
       <main className="flex-grow">
-        <div className="bg-[#001c58] text-white py-8">
+        <div className="bg-purple-gradient text-white py-8">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl font-bold text-center">Kody Promocyjne Bukmacherskie</h1>
             <p className="text-center max-w-2xl mx-auto mt-4">

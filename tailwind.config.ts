@@ -69,10 +69,19 @@ export default {
 					gold: '#c8a456',
 					black: '#000000',
 					white: '#ffffff',
+				},
+				// New purple theme colors based on the image
+				purple: {
+					dark: '#1A1F2C',
+					primary: '#370F33',
+					secondary: '#6E59A5',
+					bright: '#D946EF',
+					light: '#D6BCFA',
 				}
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/ucl-bg.jpg')",
+				'purple-gradient': 'linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
