@@ -7,88 +7,88 @@ import { Percent, Gift, Star, Ticket } from 'lucide-react';
 
 const SuperbetPromoCode = () => {
   return (
-    <div className="py-14 bg-slate-50">
+    <div className="py-14 bg-uefa-navy">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8">
           {/* Left side - Main promo */}
           <div className="w-full md:w-2/3">
-            <Card className="overflow-hidden shadow-lg">
-              <div className="bg-teal-primary p-6 text-white">
+            <Card className="overflow-hidden shadow-lg border-uefa-blue">
+              <div className="bg-uefa-gradient p-6 text-white">
                 <div className="flex items-center justify-between">
                   <h1 className="text-3xl font-bold">Kod promocyjny Superbet</h1>
-                  <div className="bg-white text-teal-primary font-bold py-2 px-4 rounded-md">SUPERBET</div>
+                  <div className="bg-white text-uefa-navy font-bold py-2 px-4 rounded-md">SUPERBET</div>
                 </div>
                 <p className="mt-4 text-lg">
                   Aktualny kod promocyjny dla nowych graczy. Najlepsze bonusy na start!
                 </p>
               </div>
 
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-6 bg-gray-50 p-4 rounded-lg">
+              <div className="p-6 bg-uefa-navy text-white">
+                <div className="flex items-center justify-between mb-6 bg-uefa-navy/50 p-4 rounded-lg border border-uefa-blue/30">
                   <div className="flex gap-4 items-center">
-                    <div className="bg-teal-primary text-white p-2 rounded-full">
+                    <div className="bg-uefa-blue text-white p-2 rounded-full">
                       <Gift size={24} />
                     </div>
                     <div>
-                      <p className="text-gray-500 text-sm">Kod promocyjny</p>
-                      <p className="text-2xl font-bold">KODVIPA</p>
+                      <p className="text-uefa-gray text-sm">Kod promocyjny</p>
+                      <p className="text-2xl font-bold text-white">KODVIPA</p>
                     </div>
                   </div>
                   <Button 
-                    className="bg-teal-bright hover:bg-teal-bright/90 text-teal-dark font-bold"
+                    className="bg-uefa-purple hover:bg-uefa-electric text-white font-bold transition-colors"
                     onClick={() => navigator.clipboard.writeText('KODVIPA')}
                   >
                     Kopiuj kod
                   </Button>
                 </div>
 
-                <div className="border-t border-gray-200 pt-6 mt-6">
+                <div className="border-t border-uefa-blue/30 pt-6 mt-6">
                   <h2 className="text-2xl font-semibold mb-4">Co zyskujesz z kodem KODVIPA?</h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
-                        <Star className="text-teal-bright" size={20} />
+                      <div className="bg-uefa-blue/20 p-2 rounded-full mt-1">
+                        <Star className="text-uefa-electric" size={20} />
                       </div>
                       <div>
-                        <p className="font-medium">Cashback do 3500 PLN</p>
-                        <p className="text-gray-600">Zwrot zakładów w pierwszym tygodniu po rejestracji</p>
+                        <p className="font-medium text-white">Cashback do 3500 PLN</p>
+                        <p className="text-uefa-gray">Zwrot zakładów w pierwszym tygodniu po rejestracji</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
-                        <Ticket className="text-teal-bright" size={20} />
+                      <div className="bg-uefa-blue/20 p-2 rounded-full mt-1">
+                        <Ticket className="text-uefa-electric" size={20} />
                       </div>
                       <div>
-                        <p className="font-medium">Freebet 200 PLN</p>
-                        <p className="text-gray-600">Darmowy zakład od pierwszej wpłaty</p>
+                        <p className="font-medium text-white">Freebet 200 PLN</p>
+                        <p className="text-uefa-gray">Darmowy zakład od pierwszej wpłaty</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
-                        <Gift className="text-teal-bright" size={20} />
+                      <div className="bg-uefa-blue/20 p-2 rounded-full mt-1">
+                        <Gift className="text-uefa-electric" size={20} />
                       </div>
                       <div>
-                        <p className="font-medium">Freebet 35 PLN</p>
-                        <p className="text-gray-600">Za pierwszy depozyt min. 50 PLN</p>
+                        <p className="font-medium text-white">Freebet 35 PLN</p>
+                        <p className="text-uefa-gray">Za pierwszy depozyt min. 50 PLN</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
-                        <Gift className="text-teal-bright" size={20} />
+                      <div className="bg-uefa-blue/20 p-2 rounded-full mt-1">
+                        <Gift className="text-uefa-electric" size={20} />
                       </div>
                       <div>
-                        <p className="font-medium">Freebet 20 PLN</p>
-                        <p className="text-gray-600">Za pobranie aplikacji mobilnej</p>
+                        <p className="font-medium text-white">Freebet 20 PLN</p>
+                        <p className="text-uefa-gray">Za pobranie aplikacji mobilnej</p>
                       </div>
                     </li>
                   </ul>
                 </div>
 
                 <div className="mt-8">
-                  <Button className="w-full bg-teal-bright hover:bg-teal-bright/90 text-teal-dark py-6 font-bold text-lg">
+                  <Button className="w-full bg-uefa-accent-gradient hover:bg-uefa-purple text-white py-6 font-bold text-lg">
                     ODBIERZ BONUS 3755 ZŁ
                   </Button>
-                  <p className="text-center text-sm text-gray-500 mt-3">
+                  <p className="text-center text-sm text-uefa-gray mt-3">
                     18+. Graj odpowiedzialnie. Obowiązuje regulamin.
                   </p>
                 </div>
@@ -98,50 +98,50 @@ const SuperbetPromoCode = () => {
 
           {/* Right side - Additional info */}
           <div className="w-full md:w-1/3">
-            <Card className="mb-6 shadow-md">
-              <div className="bg-teal-primary p-4 text-white">
+            <Card className="mb-6 shadow-md border-uefa-blue bg-uefa-navy text-white">
+              <div className="bg-uefa-gradient p-4 text-white">
                 <h2 className="text-xl font-bold">Jak skorzystać z kodu?</h2>
               </div>
               <div className="p-4">
-                <ol className="list-decimal pl-5 space-y-3">
+                <ol className="list-decimal pl-5 space-y-3 text-uefa-gray">
                   <li>Kliknij przycisk "Odbierz bonus"</li>
                   <li>Zarejestruj konto w Superbet</li>
-                  <li>Wpisz kod promocyjny <span className="font-bold">KODVIPA</span> podczas rejestracji</li>
+                  <li>Wpisz kod promocyjny <span className="font-bold text-white">KODVIPA</span> podczas rejestracji</li>
                   <li>Wpłać minimum 50 zł</li>
                   <li>Ciesz się bonusami powitalnymi</li>
                 </ol>
               </div>
             </Card>
 
-            <Card className="shadow-md">
-              <div className="bg-teal-primary p-4 text-white">
+            <Card className="shadow-md border-uefa-blue bg-uefa-navy text-white">
+              <div className="bg-uefa-gradient p-4 text-white">
                 <h2 className="text-xl font-bold">Aktualne promocje Superbet</h2>
               </div>
               <div className="p-4 space-y-4">
-                <div className="bg-gray-50 p-3 rounded-md">
+                <div className="bg-uefa-navy/50 p-3 rounded-md border border-uefa-blue/30">
                   <div className="flex items-center gap-3">
-                    <Percent className="text-teal-bright" size={20} />
+                    <Percent className="text-uefa-electric" size={20} />
                     <div>
-                      <p className="font-medium">Bonus bez ryzyka</p>
-                      <p className="text-sm text-gray-600">Zwrot do 200 zł</p>
+                      <p className="font-medium text-white">Bonus bez ryzyka</p>
+                      <p className="text-sm text-uefa-gray">Zwrot do 200 zł</p>
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 p-3 rounded-md">
+                <div className="bg-uefa-navy/50 p-3 rounded-md border border-uefa-blue/30">
                   <div className="flex items-center gap-3">
-                    <Percent className="text-teal-bright" size={20} />
+                    <Percent className="text-uefa-electric" size={20} />
                     <div>
-                      <p className="font-medium">Cashback Liga Mistrzów</p>
-                      <p className="text-sm text-gray-600">Do 100 zł zwrotu</p>
+                      <p className="font-medium text-white">Cashback Liga Mistrzów</p>
+                      <p className="text-sm text-uefa-gray">Do 100 zł zwrotu</p>
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 p-3 rounded-md">
+                <div className="bg-uefa-navy/50 p-3 rounded-md border border-uefa-blue/30">
                   <div className="flex items-center gap-3">
-                    <Percent className="text-teal-bright" size={20} />
+                    <Percent className="text-uefa-electric" size={20} />
                     <div>
-                      <p className="font-medium">Happy Hours</p>
-                      <p className="text-sm text-gray-600">Podwójne punkty w aplikacji</p>
+                      <p className="font-medium text-white">Happy Hours</p>
+                      <p className="text-sm text-uefa-gray">Podwójne punkty w aplikacji</p>
                     </div>
                   </div>
                 </div>
@@ -152,20 +152,20 @@ const SuperbetPromoCode = () => {
 
         {/* Bonus details tabs */}
         <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-6">Szczegóły bonusu Superbet</h2>
+          <h2 className="text-2xl font-bold mb-6 text-white">Szczegóły bonusu Superbet</h2>
           <Tabs defaultValue="cashback" className="w-full">
-            <TabsList className="mb-6">
-              <TabsTrigger value="cashback">Cashback 3500 PLN</TabsTrigger>
-              <TabsTrigger value="freebet">Freebet 200 PLN</TabsTrigger>
-              <TabsTrigger value="app">Bonus za aplikację</TabsTrigger>
+            <TabsList className="mb-6 bg-uefa-navy border border-uefa-blue/30">
+              <TabsTrigger value="cashback" className="data-[state=active]:bg-uefa-blue data-[state=active]:text-white">Cashback 3500 PLN</TabsTrigger>
+              <TabsTrigger value="freebet" className="data-[state=active]:bg-uefa-blue data-[state=active]:text-white">Freebet 200 PLN</TabsTrigger>
+              <TabsTrigger value="app" className="data-[state=active]:bg-uefa-blue data-[state=active]:text-white">Bonus za aplikację</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="cashback" className="bg-white p-6 rounded-lg shadow-md">
+            <TabsContent value="cashback" className="bg-uefa-navy p-6 rounded-lg shadow-md border border-uefa-blue/30 text-white">
               <h3 className="text-xl font-semibold mb-3">Cashback do 3500 PLN</h3>
-              <p className="mb-4">Bukmacher Superbet oferuje nowym graczom, którzy rejestrują się z kodem promocyjnym KODVIPA, możliwość uzyskania cashbacku do 3500 PLN.</p>
+              <p className="mb-4 text-uefa-gray">Bukmacher Superbet oferuje nowym graczom, którzy rejestrują się z kodem promocyjnym KODVIPA, możliwość uzyskania cashbacku do 3500 PLN.</p>
               
               <h4 className="text-lg font-medium mt-5 mb-2">Zasady promocji:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-uefa-gray">
                 <li>Promocja dotyczy pierwszego tygodnia po rejestracji</li>
                 <li>Otrzymujesz zwrot postawionych zakładów do kwoty 3500 PLN</li>
                 <li>Minimalna stawka zakładu: 2 PLN</li>
@@ -175,12 +175,12 @@ const SuperbetPromoCode = () => {
               </ul>
             </TabsContent>
 
-            <TabsContent value="freebet" className="bg-white p-6 rounded-lg shadow-md">
+            <TabsContent value="freebet" className="bg-uefa-navy p-6 rounded-lg shadow-md border border-uefa-blue/30 text-white">
               <h3 className="text-xl font-semibold mb-3">Freebet 200 PLN</h3>
-              <p className="mb-4">W ramach pakietu powitalnego, Superbet oferuje freebet w wysokości do 200 PLN przy pierwszej wpłacie.</p>
+              <p className="mb-4 text-uefa-gray">W ramach pakietu powitalnego, Superbet oferuje freebet w wysokości do 200 PLN przy pierwszej wpłacie.</p>
               
               <h4 className="text-lg font-medium mt-5 mb-2">Zasady promocji:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-uefa-gray">
                 <li>Minimalna wpłata: 50 PLN</li>
                 <li>Otrzymujesz freebet w wysokości 100% pierwszej wpłaty do 200 PLN</li>
                 <li>Freebet zostaje przyznany w ciągu 48 godzin od wpłaty</li>
@@ -189,12 +189,12 @@ const SuperbetPromoCode = () => {
               </ul>
             </TabsContent>
 
-            <TabsContent value="app" className="bg-white p-6 rounded-lg shadow-md">
+            <TabsContent value="app" className="bg-uefa-navy p-6 rounded-lg shadow-md border border-uefa-blue/30 text-white">
               <h3 className="text-xl font-semibold mb-3">Bonus za aplikację 20 PLN</h3>
-              <p className="mb-4">Superbet nagradza graczy, którzy pobiorą i zalogują się do aplikacji mobilnej, bonusem 20 PLN.</p>
+              <p className="mb-4 text-uefa-gray">Superbet nagradza graczy, którzy pobiorą i zalogują się do aplikacji mobilnej, bonusem 20 PLN.</p>
               
               <h4 className="text-lg font-medium mt-5 mb-2">Zasady promocji:</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-uefa-gray">
                 <li>Pobierz aplikację Superbet na urządzenie mobilne</li>
                 <li>Zaloguj się do swojego konta w aplikacji</li>
                 <li>Otrzymaj freebet 20 PLN w ciągu 24 godzin</li>

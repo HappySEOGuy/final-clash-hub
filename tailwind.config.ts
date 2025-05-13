@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,25 +62,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Champions League theme colors
-				ucl: {
-					blue: '#001c58',
-					gold: '#c8a456',
-					black: '#000000',
-					white: '#ffffff',
-				},
-				// Modern teal theme colors
-				teal: {
-					dark: '#03363D',     // Very dark teal
-					primary: '#086E7D',  // Standard teal
-					secondary: '#1BB5BE', // Lighter teal
-					bright: '#42E2B8',   // Bright accent color
-					light: '#F0F7F8',    // Very light teal/almost white
+				// UEFA theme colors
+				uefa: {
+					navy: '#0A1034',     // Deep navy blue
+					blue: '#1B3FA0',     // Royal blue
+					purple: '#5F1BBF',   // UEFA-inspired purple
+					electric: '#4C6FFF', // Electric blue
+					light: '#F0F2F5',    // Light background
+					white: '#FFFFFF',    // White
+					gray: '#CCCCCC',     // Light gray
 				}
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/ucl-bg.jpg')",
 				'teal-gradient': 'linear-gradient(102.3deg, rgba(8,110,125,1) 5.9%, rgba(27,181,190,1) 64%, rgba(240,247,248,1) 89%)',
+				'uefa-gradient': 'linear-gradient(90deg, #0A1034 0%, #1B3FA0 50%, #5F1BBF 100%)',
+				'uefa-accent-gradient': 'linear-gradient(90deg, #1B3FA0 0%, #5F1BBF 50%, #4C6FFF 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
