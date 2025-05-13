@@ -21,8 +21,8 @@ const SuperbetLanding = () => {
           {/* Three-column layout with TOC and Author stacked on left */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* Left sidebar - Table of Contents + Author Card (stacked) */}
-            <div className="hidden lg:block lg:col-span-3">
-              <div className="space-y-6">
+            <div className="hidden lg:block lg:col-span-3 space-y-6">
+              <div className="sticky top-24 space-y-6">
                 <SuperbetTableOfContents />
                 <SuperbetAuthorCard />
               </div>

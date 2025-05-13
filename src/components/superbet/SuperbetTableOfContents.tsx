@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 type Section = {
   id: string;
@@ -55,24 +56,26 @@ const SuperbetTableOfContents = () => {
   return (
     <div className="bg-white rounded-xl shadow-md p-4 sticky top-24">
       <h2 className="text-lg font-bold text-superbet-navy mb-4 font-rubik">Spis treści</h2>
-      <nav>
-        <ul className="space-y-2">
-          {sections.map((section) => (
-            <li key={section.id}>
-              <button
-                onClick={() => scrollToSection(section.id)}
-                className={`w-full text-left py-2 px-3 rounded-md text-sm transition-all font-inter ${
-                  activeSection === section.id
-                    ? 'bg-blue-50 text-superbet-blue font-medium border-l-2 border-superbet-blue'
-                    : 'text-gray-600 hover:bg-gray-50'
-                }`}
-              >
-                {section.title}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <ScrollArea className="h-[300px] pr-4">
+        <nav>
+          <ul className="space-y-2">
+            {sections.map((section) => (
+              <li key={section.id}>
+                <button
+                  onClick={() => scrollToSection(section.id)}
+                  className={`w-full text-left py-2 px-3 rounded-md text-sm transition-all font-inter ${
+                    activeSection === section.id
+                      ? 'bg-blue-50 text-superbet-blue font-medium border-l-2 border-superbet-blue'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  {section.title}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </ScrollArea>
     </div>
   );
 };
