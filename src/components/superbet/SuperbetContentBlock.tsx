@@ -1,6 +1,16 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, Check } from 'lucide-react';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table';
 
 const SuperbetContentBlock = () => {
   return (
@@ -38,6 +48,117 @@ const SuperbetContentBlock = () => {
                 na wyższe bonusy i lepsze oferty!
               </p>
             </div>
+
+            <h3 className="text-xl font-semibold mt-8 mb-4 font-rubik">Pakiet bonusów Superbet z kodem KODVIPA</h3>
+            
+            {/* Example table from the screenshot */}
+            <div className="overflow-x-auto my-6">
+              <Table className="w-full border-collapse">
+                <TableHeader className="bg-white">
+                  <TableRow className="border border-gray-200">
+                    <TableHead className="border border-gray-200 text-center font-medium py-3 px-4 text-gray-800">
+                      Kod promocyjny Superbet
+                    </TableHead>
+                    <TableHead className="border border-gray-200 text-center font-medium py-3 px-4 text-superbet-blue">
+                      KODVIPA
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow className="border border-gray-200">
+                    <TableCell className="border border-gray-200 py-3 px-4 text-gray-700">
+                      Freebet z kodem
+                    </TableCell>
+                    <TableCell className="border border-gray-200 text-center font-bold py-3 px-4">
+                      35 PLN
+                    </TableCell>
+                  </TableRow>
+                  <TableRow className="border border-gray-200">
+                    <TableCell className="border border-gray-200 py-3 px-4 text-gray-700">
+                      Zakład bez ryzyka
+                    </TableCell>
+                    <TableCell className="border border-gray-200 text-center font-bold py-3 px-4">
+                      100 PLN
+                    </TableCell>
+                  </TableRow>
+                  <TableRow className="border border-gray-200">
+                    <TableCell className="border border-gray-200 py-3 px-4 text-gray-700">
+                      Bonus bez depozytu
+                    </TableCell>
+                    <TableCell className="border border-gray-200 text-center font-bold py-3 px-4">
+                      20 PLN
+                    </TableCell>
+                  </TableRow>
+                  <TableRow className="border border-gray-200">
+                    <TableCell className="border border-gray-200 py-3 px-4 text-gray-700">
+                      Cashback tygodniowy
+                    </TableCell>
+                    <TableCell className="border border-gray-200 text-center font-bold py-3 px-4">
+                      3500 PLN
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </div>
+
+            <p className="text-center text-gray-600 mb-6">Superbet kod promocyjny – bonusy na start</p>
+            
+            {/* CTA Button from the screenshot */}
+            <div className="flex justify-center my-8">
+              <Button className="bg-[#009C3B] hover:bg-[#009C3B]/90 text-white rounded-full py-3 px-6 text-lg font-medium flex items-center gap-2">
+                Zarejestruj się w Superbet
+                <ArrowRight className="h-5 w-5" />
+              </Button>
+            </div>
+            
+            <h3 className="text-xl font-semibold mt-8 mb-4 font-rubik">W jakiej kolejności otrzymasz bonusy?</h3>
+            
+            <p className="mb-4">
+              Kwestia kolejności w przypadku Superbet jest dość elastyczna i wiele może zależeć np. od sposobu rejestracji. 
+              Jeśli zdecydujesz się na standardową rejestrację, bonusy zostaną przyznane w następującej kolejności:
+            </p>
+            
+            {/* Highlighted bullet points like in the screenshot */}
+            <ul className="space-y-6 my-6">
+              <li className="flex items-start gap-3">
+                <div className="mt-1.5 flex-shrink-0">
+                  <div className="h-4 w-4 rounded-full bg-[#009C3B] flex items-center justify-center"></div>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-800">100 zł zakład bez ryzyka</p>
+                  <p className="text-gray-600 text-sm">
+                    Bonusy te przyznane zostaną od razu po rejestracji konta. Od momentu przyznania, 
+                    będziesz miał 24 godziny na wykorzystanie ich.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="mt-1.5 flex-shrink-0">
+                  <div className="h-4 w-4 rounded-full bg-[#009C3B] flex items-center justify-center"></div>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-800">Freebet od depozytu 35 PLN</p>
+                  <p className="text-gray-600 text-sm">
+                    Zostanie przyznany po dokonaniu pierwszej wpłaty, pod warunkiem że zarejestrujesz konto 
+                    z kodem promocyjnym. Bonus przyznawany jest we freebecie, który pojawi 
+                    się na koncie w ciągu 24h i należy go wykorzystać w ciągu 48h.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="mt-1.5 flex-shrink-0">
+                  <div className="h-4 w-4 rounded-full bg-[#009C3B] flex items-center justify-center"></div>
+                </div>
+                <div>
+                  <p className="font-medium text-gray-800">Bonus bez depozytu 20 PLN</p>
+                  <p className="text-gray-600 text-sm">
+                    Bonus przyznawany za przejście pełnej rejestracji, ze zgodami marketingowymi. Można 
+                    uzyskać go bezpośrednio po założeniu konta lub po weryfikacji przesłanych 
+                    dokumentów. Bonus we freebecie do wykorzystania w ciągu 48h.
+                  </p>
+                </div>
+              </li>
+            </ul>
             
             <h3 className="text-xl font-semibold mt-8 mb-4 font-rubik">Dlaczego warto korzystać z kodów promocyjnych Superbet?</h3>
             
