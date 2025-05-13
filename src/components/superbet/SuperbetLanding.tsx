@@ -16,15 +16,18 @@ const SuperbetLanding = () => {
       <SuperbetHero />
       <main className="flex-grow bg-superbet-background">
         <div className="container mx-auto px-4 py-8 -mt-20 relative z-10">
-          {/* Three-column layout */}
+          {/* Three-column layout with TOC and Author stacked on left */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            {/* Left sidebar - Table of Contents */}
-            <div className="hidden lg:block lg:col-span-2">
-              <SuperbetTableOfContents />
+            {/* Left sidebar - Table of Contents + Author Card (stacked) */}
+            <div className="hidden lg:block lg:col-span-3">
+              <div className="space-y-6">
+                <SuperbetTableOfContents />
+                <SuperbetAuthorCard />
+              </div>
             </div>
             
-            {/* Main content - centered and narrower */}
-            <div className="col-span-1 md:col-span-12 lg:col-span-7">
+            {/* Main content - wider */}
+            <div className="col-span-1 md:col-span-12 lg:col-span-9">
               <div id="kod-promocyjny">
                 <SuperbetPromoCode />
               </div>
@@ -34,11 +37,6 @@ const SuperbetLanding = () => {
               <div id="aktualne-promocje">
                 <SuperbetPromotions />
               </div>
-            </div>
-            
-            {/* Right sidebar - Author info */}
-            <div className="hidden lg:block lg:col-span-3">
-              <SuperbetAuthorCard />
             </div>
           </div>
         </div>
