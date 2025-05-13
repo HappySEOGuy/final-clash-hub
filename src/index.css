@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,7 +99,11 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-rubik;
   }
 }
 
@@ -116,5 +122,13 @@
 
   .teal-gradient {
     @apply bg-teal-gradient;
+  }
+  
+  .superbet-section {
+    @apply my-8 p-6 bg-white rounded-xl shadow-card;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold text-superbet-navy mb-4 font-rubik;
   }
 }
