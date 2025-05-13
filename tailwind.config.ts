@@ -62,16 +62,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated color scheme
-				promo: {
-					navy: '#0A1034',     // Deep navy blue
+				// Updated color scheme for Superbet/UEFA
+				superbet: {
+					navy: '#0A1034',     // Dark navy blue
 					blue: '#1B3FA0',     // Royal blue
+					gold: '#C8A951',     // Gold accent
+					red: '#E30613',      // Superbet red
 					purple: '#6A4ACF',   // Soft purple
-					sapphire: '#3562E9',  // Sapphire blue
+					'electric-blue': '#4C6FFF', // Electric blue
 					background: '#F8F9FA', // Light background
 					white: '#FFFFFF',    // White
-					gray: '#8A8A8A',     // Medium gray 
-					lightGray: '#EFEFEF', // Light gray for card borders
+					gray: '#8A8A8A',     // Medium gray
+					lightGray: '#EFEFEF', // Light gray
 				}
 			},
 			backgroundImage: {
@@ -117,7 +119,11 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'pulse-slow': 'pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-			}
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'rubik': ['Rubik', 'sans-serif'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
