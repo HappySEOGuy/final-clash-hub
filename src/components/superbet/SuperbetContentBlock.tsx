@@ -41,7 +41,7 @@ const SuperbetContentBlock = () => {
               </li>
             </ol>
             
-            <div className="bg-[#f0f9f1] border-l-4 border-superbet-red p-4 my-6">
+            <div className="bg-[#f0f9f1] border-l-4 border-superbet-navy p-4 my-6">
               <p className="text-sm font-medium">
                 Dzięki współpracy z Superbet możemy zaoferować naszym czytelnikom ekskluzywne kody promocyjne, 
                 które nie są dostępne na innych stronach. Oznacza to, że korzystając z naszych kodów, możesz liczyć 
@@ -59,7 +59,7 @@ const SuperbetContentBlock = () => {
                     <TableHead className="border border-gray-200 text-center font-medium py-3 px-4 text-gray-800">
                       Kod promocyjny Superbet
                     </TableHead>
-                    <TableHead className="border border-gray-200 text-center font-medium py-3 px-4 text-superbet-blue">
+                    <TableHead className="border border-gray-200 text-center font-medium py-3 px-4 text-superbet-navy">
                       KODVIPA
                     </TableHead>
                   </TableRow>
@@ -105,7 +105,7 @@ const SuperbetContentBlock = () => {
             
             {/* CTA Button from the screenshot */}
             <div className="flex justify-center my-8">
-              <Button className="bg-[#009C3B] hover:bg-[#009C3B]/90 text-white rounded-full py-3 px-6 text-lg font-medium flex items-center gap-2">
+              <Button className="bg-superbet-navy hover:bg-superbet-navy/90 text-white rounded-full py-3 px-6 text-lg font-medium flex items-center gap-2">
                 Zarejestruj się w Superbet
                 <ArrowRight className="h-5 w-5" />
               </Button>
@@ -122,7 +122,7 @@ const SuperbetContentBlock = () => {
             <ul className="space-y-6 my-6">
               <li className="flex items-start gap-3">
                 <div className="mt-1.5 flex-shrink-0">
-                  <div className="h-4 w-4 rounded-full bg-[#009C3B] flex items-center justify-center"></div>
+                  <div className="h-4 w-4 rounded-full bg-superbet-navy flex items-center justify-center"></div>
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">100 zł zakład bez ryzyka</p>
@@ -134,7 +134,7 @@ const SuperbetContentBlock = () => {
               </li>
               <li className="flex items-start gap-3">
                 <div className="mt-1.5 flex-shrink-0">
-                  <div className="h-4 w-4 rounded-full bg-[#009C3B] flex items-center justify-center"></div>
+                  <div className="h-4 w-4 rounded-full bg-superbet-navy flex items-center justify-center"></div>
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">Freebet od depozytu 35 PLN</p>
@@ -147,7 +147,7 @@ const SuperbetContentBlock = () => {
               </li>
               <li className="flex items-start gap-3">
                 <div className="mt-1.5 flex-shrink-0">
-                  <div className="h-4 w-4 rounded-full bg-[#009C3B] flex items-center justify-center"></div>
+                  <div className="h-4 w-4 rounded-full bg-superbet-navy flex items-center justify-center"></div>
                 </div>
                 <div>
                   <p className="font-medium text-gray-800">Bonus bez depozytu 20 PLN</p>

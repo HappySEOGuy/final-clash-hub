@@ -22,7 +22,7 @@ const SuperbetPromoCode = () => {
               <div className="bg-subtle-blue p-6 rounded-lg border border-blue-100 mb-8">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div className="flex gap-4 items-center">
-                    <div className="bg-superbet-blue text-white p-3 rounded-full">
+                    <div className="bg-superbet-navy text-white p-3 rounded-full">
                       <Gift size={24} />
                     </div>
                     <div>
@@ -31,7 +31,7 @@ const SuperbetPromoCode = () => {
                     </div>
                   </div>
                   <Button 
-                    className="bg-superbet-purple hover:bg-superbet-purple/90 text-white font-bold transition-colors"
+                    className="bg-superbet-navy hover:bg-superbet-navy/90 text-white font-bold transition-colors"
                     onClick={() => navigator.clipboard.writeText('KODVIPA')}
                   >
                     Kopiuj kod
@@ -44,7 +44,7 @@ const SuperbetPromoCode = () => {
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4">
                     <div className="bg-blue-50 p-3 rounded-full mt-1">
-                      <Star className="text-superbet-blue" size={20} />
+                      <Star className="text-superbet-navy" size={20} />
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 font-rubik">Cashback do 3500 PLN</p>
@@ -53,7 +53,7 @@ const SuperbetPromoCode = () => {
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="bg-blue-50 p-3 rounded-full mt-1">
-                      <Ticket className="text-superbet-blue" size={20} />
+                      <Ticket className="text-superbet-navy" size={20} />
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 font-rubik">Freebet 200 PLN</p>
@@ -62,7 +62,7 @@ const SuperbetPromoCode = () => {
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="bg-blue-50 p-3 rounded-full mt-1">
-                      <Gift className="text-superbet-blue" size={20} />
+                      <Gift className="text-superbet-navy" size={20} />
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 font-rubik">Freebet 35 PLN</p>
@@ -71,7 +71,7 @@ const SuperbetPromoCode = () => {
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="bg-blue-50 p-3 rounded-full mt-1">
-                      <Gift className="text-superbet-blue" size={20} />
+                      <Gift className="text-superbet-navy" size={20} />
                     </div>
                     <div>
                       <p className="font-medium text-gray-800 font-rubik">Freebet 20 PLN</p>
@@ -98,7 +98,7 @@ const SuperbetPromoCode = () => {
                   Zarejestruj się z kodem <span className="font-semibold">KODVIPA</span> i odbierz pełen pakiet bonusów
                 </p>
                 
-                <Button className="w-full bg-superbet-red hover:bg-superbet-red/90 text-white py-3 px-8 font-bold text-lg rounded-lg">
+                <Button className="w-full bg-superbet-navy hover:bg-superbet-navy/90 text-white py-3 px-8 font-bold text-lg rounded-lg">
                   ODBIERZ BONUS 3755 ZŁ
                 </Button>
                 <p className="text-center text-sm text-gray-500 mt-3 font-inter">
