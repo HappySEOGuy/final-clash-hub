@@ -2,26 +2,26 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Clock, Target, Ticket } from 'lucide-react';
+import { Gift, Award, Zap } from 'lucide-react';
 
 const SuperbetPromotions = () => {
   const promotions = [
     {
-      icon: <Clock size={24} />,
-      title: "Happy Hours",
-      description: "Podwójne punkty w aplikacji",
+      icon: <Zap size={24} />,
+      title: "SuperPrzewaga",
+      description: "Jeśli Twoja drużyna będzie miała dwie bramki przewagi - wygrywasz!",
       color: "bg-subtle-purple"
     },
     {
-      icon: <Target size={24} />,
-      title: "Cashback Liga Mistrzów",
-      description: "Zwrot do 100 zł",
+      icon: <Award size={24} />,
+      title: "Wybory Prezydenckie",
+      description: "400 zł za poprawne wytypowanie wyborów",
       color: "bg-subtle-blue"
     },
     {
-      icon: <Ticket size={24} />,
-      title: "Bonus bez ryzyka",
-      description: "Zakład bez konsekwencji do 200 zł",
+      icon: <Gift size={24} />,
+      title: "Extra Freebet",
+      description: "O wartości 35 zł z kodem KODVIPA",
       color: "bg-subtle-purple"
     }
   ];
@@ -43,7 +43,7 @@ const SuperbetPromotions = () => {
             </div>
             <div className="p-6">
               <p className="mb-6 text-gray-600 font-inter">{promo.description}</p>
-              <Button className="w-full bg-superbet-blue hover:bg-superbet-blue/90 text-white">
+              <Button className="w-full bg-superbet-red hover:bg-superbet-red/90 text-white">
                 Zgarnij ofertę
               </Button>
             </div>

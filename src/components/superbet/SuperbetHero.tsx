@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const SuperbetHero = () => {
   return (
@@ -13,12 +12,6 @@ const SuperbetHero = () => {
           <p className="text-xl text-white/90 mb-8 font-inter">
             Zgarnij najlepszy bonus powitalny i graj z przewagą
           </p>
-          
-          <Button 
-            className="bg-superbet-red hover:bg-superbet-red/90 text-white font-bold py-3 px-8 text-lg rounded-lg shadow-lg transition-transform transform hover:scale-105"
-          >
-            ODBIERZ DO 3500 ZŁ
-          </Button>
         </div>
       </div>
     </div>
