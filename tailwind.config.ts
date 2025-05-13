@@ -62,15 +62,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// UEFA theme colors
-				uefa: {
+				// Updated color scheme
+				promo: {
 					navy: '#0A1034',     // Deep navy blue
 					blue: '#1B3FA0',     // Royal blue
-					purple: '#5F1BBF',   // UEFA-inspired purple
-					electric: '#4C6FFF', // Electric blue
-					light: '#F0F2F5',    // Light background
+					purple: '#6A4ACF',   // Soft purple
+					sapphire: '#3562E9',  // Sapphire blue
+					background: '#F8F9FA', // Light background
 					white: '#FFFFFF',    // White
-					gray: '#CCCCCC',     // Light gray
+					gray: '#8A8A8A',     // Medium gray 
+					lightGray: '#EFEFEF', // Light gray for card borders
 				}
 			},
 			backgroundImage: {
@@ -78,6 +79,12 @@ export default {
 				'teal-gradient': 'linear-gradient(102.3deg, rgba(8,110,125,1) 5.9%, rgba(27,181,190,1) 64%, rgba(240,247,248,1) 89%)',
 				'uefa-gradient': 'linear-gradient(90deg, #0A1034 0%, #1B3FA0 50%, #5F1BBF 100%)',
 				'uefa-accent-gradient': 'linear-gradient(90deg, #1B3FA0 0%, #5F1BBF 50%, #4C6FFF 100%)',
+				'subtle-blue': 'linear-gradient(135deg, #F8F9FA 0%, #E5EEFF 100%)',
+				'subtle-purple': 'linear-gradient(135deg, #F8F9FA 0%, #E5DEFF 100%)',
+			},
+			boxShadow: {
+				'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
+				'subtle': '0 2px 10px rgba(0, 0, 0, 0.05)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

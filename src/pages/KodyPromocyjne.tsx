@@ -6,7 +6,7 @@ import SuperbetPromoCode from "@/components/SuperbetPromoCode";
 
 const KodyPromocyjne = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-uefa-navy">
+    <div className="min-h-screen flex flex-col bg-promo-background">
       <KodyNavigation />
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-8">
