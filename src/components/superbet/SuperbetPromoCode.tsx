@@ -86,9 +86,9 @@ const SuperbetPromoCode = () => {
             <div className="w-full lg:w-1/2 flex flex-col items-center">
               <div className="rounded-lg overflow-hidden mb-8 w-full">
                 <img 
-                  src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg" 
-                  alt="Superbet Bonus" 
-                  className="w-full h-64 object-cover"
+                  src="/lovable-uploads/1542a8a7-612f-40c6-9ae9-b5455e462e30.png" 
+                  alt="Superbet Logo" 
+                  className="w-full h-auto object-contain p-4"
                 />
               </div>
               
@@ -105,49 +105,6 @@ const SuperbetPromoCode = () => {
                   18+. Graj odpowiedzialnie. Obowiązuje regulamin.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </Card>
-
-      {/* FAQ Section */}
-      <Card className="overflow-hidden shadow-card rounded-xl bg-white" id="faq">
-        <div className="p-6 border-b border-superbet-lightGray">
-          <h2 className="text-2xl font-bold text-superbet-navy font-rubik">Często zadawane pytania</h2>
-        </div>
-        <div className="p-6">
-          <div className="space-y-6">
-            <div className="border-b border-superbet-lightGray pb-5">
-              <h3 className="text-lg font-medium text-superbet-navy mb-2 font-rubik">
-                Czy kod promocyjny Superbet jest bezpłatny?
-              </h3>
-              <p className="text-gray-600 font-inter">
-                Tak, kod promocyjny KODVIPA jest całkowicie bezpłatny. Wystarczy wpisać go podczas rejestracji, aby otrzymać dostęp do wszystkich bonusów powitalnych.
-              </p>
-            </div>
-            <div className="border-b border-superbet-lightGray pb-5">
-              <h3 className="text-lg font-medium text-superbet-navy mb-2 font-rubik">
-                Jak długo ważny jest kod promocyjny?
-              </h3>
-              <p className="text-gray-600 font-inter">
-                Kod promocyjny KODVIPA jest ważny do końca roku. Po tym czasie może zostać zastąpiony innym kodem lub przedłużony.
-              </p>
-            </div>
-            <div className="border-b border-superbet-lightGray pb-5">
-              <h3 className="text-lg font-medium text-superbet-navy mb-2 font-rubik">
-                Czy mogę skorzystać z kodu, jeśli mam już konto w Superbet?
-              </h3>
-              <p className="text-gray-600 font-inter">
-                Nie, kod promocyjny KODVIPA jest dostępny tylko dla nowych użytkowników podczas procesu rejestracji.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-medium text-superbet-navy mb-2 font-rubik">
-                Jakie są warunki obrotu bonusem?
-              </h3>
-              <p className="text-gray-600 font-inter">
-                Aby wypłacić środki z bonusu, należy obrócić je jednokrotnie na zakładach z minimalnym kursem 1.50. Szczegółowe warunki znajdziesz w regulaminie promocji na stronie bukmachera.
-              </p>
             </div>
           </div>
         </div>

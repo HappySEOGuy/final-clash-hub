@@ -8,6 +8,8 @@ import SuperbetPromotions from './SuperbetPromotions';
 import SuperbetFooter from './SuperbetFooter';
 import SuperbetTableOfContents from './SuperbetTableOfContents';
 import SuperbetAuthorCard from './SuperbetAuthorCard';
+import SuperbetContentBlock from './SuperbetContentBlock';
+import SuperbetFAQ from './SuperbetFAQ';
 
 const SuperbetLanding = () => {
   return (
@@ -36,6 +38,12 @@ const SuperbetLanding = () => {
               </div>
               <div id="aktualne-promocje">
                 <SuperbetPromotions />
+              </div>
+              <div id="content-block">
+                <SuperbetContentBlock />
+              </div>
+              <div id="faq-section">
+                <SuperbetFAQ />
               </div>
             </div>
           </div>

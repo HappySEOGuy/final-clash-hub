@@ -12,6 +12,7 @@ const sections: Section[] = [
   { id: 'jak-skorzystac', title: 'Jak skorzystać z kodu' },
   { id: 'co-zyskasz', title: 'Co zyskujesz z kodem' },
   { id: 'aktualne-promocje', title: 'Aktualne promocje' },
+  { id: 'content-section', title: 'Informacje o kodach' },
   { id: 'faq', title: 'FAQ' },
 ];
 
