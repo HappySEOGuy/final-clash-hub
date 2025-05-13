@@ -70,18 +70,18 @@ export default {
 					black: '#000000',
 					white: '#ffffff',
 				},
-				// Navy blue theme colors replacing the purple theme
-				navy: {
-					dark: '#0A2342',   // Very dark navy
-					primary: '#0E3B63', // Standard navy blue
-					secondary: '#135D99', // Lighter navy blue
-					bright: '#3E92CC',  // Bright accent color
-					light: '#C8D9E5',   // Very light blue/almost white
+				// Modern teal theme colors
+				teal: {
+					dark: '#03363D',     // Very dark teal
+					primary: '#086E7D',  // Standard teal
+					secondary: '#1BB5BE', // Lighter teal
+					bright: '#42E2B8',   // Bright accent color
+					light: '#F0F7F8',    // Very light teal/almost white
 				}
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/ucl-bg.jpg')",
-				'navy-gradient': 'linear-gradient(102.3deg, rgba(14,59,99,1) 5.9%, rgba(62,146,204,1) 64%, rgba(200,217,229,1) 89%)',
+				'teal-gradient': 'linear-gradient(102.3deg, rgba(8,110,125,1) 5.9%, rgba(27,181,190,1) 64%, rgba(240,247,248,1) 89%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

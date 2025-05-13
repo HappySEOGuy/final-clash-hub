@@ -4,15 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Percent, Gift, Star, Ticket } from 'lucide-react';
-import { 
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 
 const SuperbetPromoCode = () => {
   return (
@@ -22,10 +13,10 @@ const SuperbetPromoCode = () => {
           {/* Left side - Main promo */}
           <div className="w-full md:w-2/3">
             <Card className="overflow-hidden shadow-lg">
-              <div className="bg-navy-primary p-6 text-white">
+              <div className="bg-teal-primary p-6 text-white">
                 <div className="flex items-center justify-between">
                   <h1 className="text-3xl font-bold">Kod promocyjny Superbet</h1>
-                  <div className="bg-white text-navy-primary font-bold py-2 px-4 rounded-md">SUPERBET</div>
+                  <div className="bg-white text-teal-primary font-bold py-2 px-4 rounded-md">SUPERBET</div>
                 </div>
                 <p className="mt-4 text-lg">
                   Aktualny kod promocyjny dla nowych graczy. Najlepsze bonusy na start!
@@ -35,7 +26,7 @@ const SuperbetPromoCode = () => {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6 bg-gray-50 p-4 rounded-lg">
                   <div className="flex gap-4 items-center">
-                    <div className="bg-navy-primary text-white p-2 rounded-full">
+                    <div className="bg-teal-primary text-white p-2 rounded-full">
                       <Gift size={24} />
                     </div>
                     <div>
@@ -44,7 +35,7 @@ const SuperbetPromoCode = () => {
                     </div>
                   </div>
                   <Button 
-                    className="bg-navy-bright hover:bg-navy-bright/90 text-white font-bold"
+                    className="bg-teal-bright hover:bg-teal-bright/90 text-teal-dark font-bold"
                     onClick={() => navigator.clipboard.writeText('KODVIPA')}
                   >
                     Kopiuj kod
@@ -55,8 +46,8 @@ const SuperbetPromoCode = () => {
                   <h2 className="text-2xl font-semibold mb-4">Co zyskujesz z kodem KODVIPA?</h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <div className="bg-navy-light/30 p-2 rounded-full mt-1">
-                        <Star className="text-navy-bright" size={20} />
+                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
+                        <Star className="text-teal-bright" size={20} />
                       </div>
                       <div>
                         <p className="font-medium">Cashback do 3500 PLN</p>
@@ -64,8 +55,8 @@ const SuperbetPromoCode = () => {
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="bg-navy-light/30 p-2 rounded-full mt-1">
-                        <Ticket className="text-navy-bright" size={20} />
+                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
+                        <Ticket className="text-teal-bright" size={20} />
                       </div>
                       <div>
                         <p className="font-medium">Freebet 200 PLN</p>
@@ -73,8 +64,8 @@ const SuperbetPromoCode = () => {
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="bg-navy-light/30 p-2 rounded-full mt-1">
-                        <Gift className="text-navy-bright" size={20} />
+                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
+                        <Gift className="text-teal-bright" size={20} />
                       </div>
                       <div>
                         <p className="font-medium">Freebet 35 PLN</p>
@@ -82,8 +73,8 @@ const SuperbetPromoCode = () => {
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="bg-navy-light/30 p-2 rounded-full mt-1">
-                        <Gift className="text-navy-bright" size={20} />
+                      <div className="bg-teal-light/30 p-2 rounded-full mt-1">
+                        <Gift className="text-teal-bright" size={20} />
                       </div>
                       <div>
                         <p className="font-medium">Freebet 20 PLN</p>
@@ -94,7 +85,7 @@ const SuperbetPromoCode = () => {
                 </div>
 
                 <div className="mt-8">
-                  <Button className="w-full bg-navy-bright hover:bg-navy-bright/90 text-white py-6 font-bold text-lg">
+                  <Button className="w-full bg-teal-bright hover:bg-teal-bright/90 text-teal-dark py-6 font-bold text-lg">
                     ODBIERZ BONUS 3755 ZŁ
                   </Button>
                   <p className="text-center text-sm text-gray-500 mt-3">
@@ -108,7 +99,7 @@ const SuperbetPromoCode = () => {
           {/* Right side - Additional info */}
           <div className="w-full md:w-1/3">
             <Card className="mb-6 shadow-md">
-              <div className="bg-navy-primary p-4 text-white">
+              <div className="bg-teal-primary p-4 text-white">
                 <h2 className="text-xl font-bold">Jak skorzystać z kodu?</h2>
               </div>
               <div className="p-4">
@@ -123,13 +114,13 @@ const SuperbetPromoCode = () => {
             </Card>
 
             <Card className="shadow-md">
-              <div className="bg-navy-primary p-4 text-white">
+              <div className="bg-teal-primary p-4 text-white">
                 <h2 className="text-xl font-bold">Aktualne promocje Superbet</h2>
               </div>
               <div className="p-4 space-y-4">
                 <div className="bg-gray-50 p-3 rounded-md">
                   <div className="flex items-center gap-3">
-                    <Percent className="text-navy-bright" size={20} />
+                    <Percent className="text-teal-bright" size={20} />
                     <div>
                       <p className="font-medium">Bonus bez ryzyka</p>
                       <p className="text-sm text-gray-600">Zwrot do 200 zł</p>
@@ -138,7 +129,7 @@ const SuperbetPromoCode = () => {
                 </div>
                 <div className="bg-gray-50 p-3 rounded-md">
                   <div className="flex items-center gap-3">
-                    <Percent className="text-navy-bright" size={20} />
+                    <Percent className="text-teal-bright" size={20} />
                     <div>
                       <p className="font-medium">Cashback Liga Mistrzów</p>
                       <p className="text-sm text-gray-600">Do 100 zł zwrotu</p>
@@ -147,7 +138,7 @@ const SuperbetPromoCode = () => {
                 </div>
                 <div className="bg-gray-50 p-3 rounded-md">
                   <div className="flex items-center gap-3">
-                    <Percent className="text-navy-bright" size={20} />
+                    <Percent className="text-teal-bright" size={20} />
                     <div>
                       <p className="font-medium">Happy Hours</p>
                       <p className="text-sm text-gray-600">Podwójne punkty w aplikacji</p>
