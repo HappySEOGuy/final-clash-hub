@@ -30,6 +30,7 @@ const App = () => (
           <Route path="/promocje" element={<Promotions />} />
           <Route path="/kody-promocyjne" element={<KodyPromocyjne />} />
           <Route path="/recenzje/superbet" element={<SuperbetReviews />} />
+          <Route path="/recenzje" element={<SuperbetReviews />} />
           <Route path="/kody" element={<Index />} />
           <Route path="/bukmacherzy" element={<Index />} />
           <Route path="/opinie" element={<Index />} />
