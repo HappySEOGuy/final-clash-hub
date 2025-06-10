@@ -36,7 +36,7 @@ const SuperbetNavbar = () => {
               <Code size={18} />
               <span>Kody bukmacherskie</span>
             </Link>
-            <Link to="/kody-promocyjne" className="font-medium text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
+            <Link to="/kody-promocyjne" className="font-medium text-white hover:text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
               <Code size={18} />
               <span>Kody Promocyjne</span>
             </Link>
@@ -44,9 +44,9 @@ const SuperbetNavbar = () => {
               <Users size={18} />
               <span>Bukmacherzy</span>
             </Link>
-            <Link to="/opinie" className="font-medium text-white hover:text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
+            <Link to="/recenzje-superbet" className="font-medium text-white hover:text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
               <MessageSquare size={18} />
-              <span>Opinie</span>
+              <span>Recenzje Superbet</span>
             </Link>
           </div>
           
@@ -114,12 +114,12 @@ const SuperbetNavbar = () => {
                 <span>Bukmacherzy</span>
               </Link>
               <Link 
-                to="/opinie" 
+                to="/recenzje-superbet" 
                 className="flex items-center gap-2 font-medium text-white hover:text-superbet-gold px-2 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <MessageSquare size={18} />
-                <span>Opinie</span>
+                <span>Recenzje Superbet</span>
               </Link>
               
               {/* Mobile CTA Button */}
