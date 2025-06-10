@@ -9,6 +9,7 @@ import Teams from "./pages/Teams";
 import Odds from "./pages/Odds";
 import Promotions from "./pages/Promotions";
 import KodyPromocyjne from "./pages/KodyPromocyjne";
+import SuperbetReviews from "./pages/SuperbetReviews";
 import StatsPage from "./pages/Stats";
 import TablesPage from "./pages/TablesPage";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/promotions" element={<Promotions />} />
           <Route path="/promocje" element={<Promotions />} />
           <Route path="/kody-promocyjne" element={<KodyPromocyjne />} />
+          <Route path="/recenzje/superbet" element={<SuperbetReviews />} />
           <Route path="/kody" element={<Index />} />
           <Route path="/bukmacherzy" element={<Index />} />
           <Route path="/opinie" element={<Index />} />
