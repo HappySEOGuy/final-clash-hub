@@ -12,6 +12,7 @@ import KodyPromocyjne from "./pages/KodyPromocyjne";
 import SuperbetReviews from "./pages/SuperbetReviews";
 import StatsPage from "./pages/Stats";
 import TablesPage from "./pages/TablesPage";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,7 +36,7 @@ const App = () => (
           <Route path="/kody" element={<Index />} />
           <Route path="/bukmacherzy" element={<Index />} />
           <Route path="/opinie" element={<Index />} />
-          <Route path="/blog" element={<Index />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/stats" element={<StatsPage />} />
           <Route path="/tables" element={<TablesPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

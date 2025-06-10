@@ -34,7 +34,7 @@ const Index = () => {
         <TopBookmakers />
 
         {/* Blog Section */}
-        <BlogSection />
+        <BlogSection isFullPage={false} />
       </main>
       <KodyFooter />
     </div>
