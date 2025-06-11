@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Home, Star, Code, Users, MessageSquare, ArrowRight } from 'lucide-react';
+import { Menu, X, Home, Star, Code, Users, MessageSquare, ArrowRight, TrendingUp } from 'lucide-react';
 
 const SuperbetNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,6 +27,10 @@ const SuperbetNavbar = () => {
             <Link to="/" className="font-medium text-white hover:text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
               <Home size={18} />
               <span>Strona główna</span>
+            </Link>
+            <Link to="/typy-bukmacherskie" className="font-medium text-white hover:text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
+              <TrendingUp size={18} />
+              <span>Typy</span>
             </Link>
             <Link to="/promocje" className="font-medium text-white hover:text-superbet-gold transition-colors font-inter flex items-center gap-1.5">
               <Star size={18} />
@@ -80,6 +84,14 @@ const SuperbetNavbar = () => {
               >
                 <Home size={18} />
                 <span>Strona główna</span>
+              </Link>
+              <Link 
+                to="/typy-bukmacherskie" 
+                className="flex items-center gap-2 font-medium text-white hover:text-superbet-gold px-2 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <TrendingUp size={18} />
+                <span>Typy</span>
               </Link>
               <Link 
                 to="/promocje" 
