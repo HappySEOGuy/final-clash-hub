@@ -1,24 +1,27 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star, Eye, MessageSquare } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const PopularMatches = () => {
+  const navigate = useNavigate();
+
   const popularMatches = [
     {
       id: 1,
-      match: 'Liverpool vs Chelsea',
-      league: 'Premier League',
-      date: '13.05.2025',
-      views: 1245,
-      comments: 89,
-      rating: 4.8,
+      match: 'Inter vs PSG',
+      league: 'Liga Mistrzów - Finał',
+      date: '31.05.2025',
+      views: 2845,
+      comments: 189,
+      rating: 4.9,
       tips: [
-        { bet: '1X', odds: '1.55' },
+        { bet: 'PSG wygra', odds: '2.25' },
         { bet: 'Powyżej 2.5', odds: '1.90' },
         { bet: 'BTTS', odds: '1.75' }
-      ]
+      ],
+      hasDetailedAnalysis: true
     },
     {
       id: 2,
@@ -98,8 +101,15 @@ const PopularMatches = () => {
                   </div>
                 </div>
 
-                <Button className="w-full bg-[#001c58] hover:bg-[#0a2b6b] text-white">
-                  Zobacz szczegółową analizę
+                <Button 
+                  className="w-full bg-[#001c58] hover:bg-[#0a2b6b] text-white"
+                  onClick={() => {
+                    if (match.hasDetailedAnalysis) {
+                      navigate('/mecz/inter-psg');
+                    }
+                  }}
+                >
+                  {match.hasDetailedAnalysis ? 'Zobacz pełną analizę' : 'Zobacz szczegółową analizę'}
                 </Button>
               </CardContent>
             </Card>

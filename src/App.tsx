@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +14,7 @@ import TablesPage from "./pages/TablesPage";
 import Blog from "./pages/Blog";
 import BettingTips from "./pages/BettingTips";
 import NotFound from "./pages/NotFound";
+import MatchAnalysis from "./pages/MatchAnalysis";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +39,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/typy" element={<BettingTips />} />
           <Route path="/typy-bukmacherskie" element={<BettingTips />} />
+          <Route path="/mecz/inter-psg" element={<MatchAnalysis />} />
           <Route path="/stats" element={<StatsPage />} />
           <Route path="/tables" element={<TablesPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
